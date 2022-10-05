@@ -1,13 +1,18 @@
 
-# Class inheritance
+# Class inheritance ক্লাস ইনহেরিটেন্স
 
 Class inheritance is a way for one class to extend another class.
+ 
+ক্লাস ইনহেরিটেন্স এমন একটি পদ্ধতি যার মাধ্যমে একটি ক্লাসের সব ফাংশন অন্য আরেকটি ক্লাসে ব্যবহার করা যায়। 
 
-So we can create new functionality on top of the existing.
-
+So we can create new funcionality on top of the existing.
+এতে করে আমরা উপস্থিত সব কার্যকারিতার সাথে আরও নতুন কার্যকারিতা যোগ করতে পারি। 
 ## The "extends" keyword
+## "extends" কীওয়ার্ড
 
 Let's say we have class `Animal`:
+
+মনে করি আমাদের `Animal` নামের একটি ক্লাস আছেঃ 
 
 ```js
 class Animal {
@@ -29,10 +34,12 @@ let animal = new Animal("My animal");
 ```
 
 Here's how we can represent `animal` object and `Animal` class graphically:
+আমরা এভাবে ছকের মাধ্যমে `animal` অবজেক্ট ও `Animal` ক্লাস দুটিকে দেখাতে পারিঃ
 
 ![](rabbit-animal-independent-animal.svg)
 
 ...And we would like to create another `class Rabbit`.
+
 
 As rabbits are animals, `Rabbit` class should be based on `Animal`, have access to animal methods, so that rabbits can do what "generic" animals can do.
 
